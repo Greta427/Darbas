@@ -1,3 +1,4 @@
 ﻿  main.cpp
-c:\users\pg5410dv\desktop\project5\project5\main.cpp(11): warning C4101: 'kuris': unreferenced local variable
-  Project5.vcxproj -> C:\Users\PG5410DV\Desktop\Project5\Debug\Project5.exe
+g:\g1t\2 kursas. 7 testas (greta gabrėnaitė)\project5\main.cpp(11): warning C4101: 'kuris': unreferenced local variable
+  LINK : G:\g1t\2 kursas. 7 testas (Greta Gabrėnaitė)\Debug\Project5.exe not found or not built by the last incremental link; performing full link
+  Project5.vcxproj -> G:\g1t\2 kursas. 7 testas (Greta Gabrėnaitė)\Debug\Project5.exe

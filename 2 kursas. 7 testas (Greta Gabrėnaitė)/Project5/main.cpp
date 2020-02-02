@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-const int Cmax = 100;
+const int Cmax = 1;
 void Skaityti(int A[], int &n);
 void Isvedimas(int A[], int n);
 void Salinti(int A[], int&n, int kuris);
@@ -11,7 +11,7 @@ int main()
 	int A[Cmax], n, kuris;
 	Skaityti(A, n);
 	Isvedimas(A, n);
-	Vienodos(A, n);
+	VienodosReiksmes(A, n);
 	return 0;
 }
 void Skaityti(int A[], int &n)
@@ -33,19 +33,20 @@ void Isvedimas(int A[], int n)
 	}
 	rf.close();
 }
-void Vienodos(int A[], int &n)
+void VienodosReiksmes(int A[], int &n)
 {
 	int kuris = 0;
-	for (int i = 0; i < n-1; i++)
-	{
-		for (int j = i + 1; j < n; j++)
+	for (int i = 0; i < n - 1; i++) {
 		{
-			if (A[i] == A[j])
+			for (int j = i + 1; j < n; j++)
 			{
-				kuris = i;
-				Salinti(A, n, kuris);
+				if (A[i] == A[j])
+				{
+					kuris = i;
+					Salinti(A, n, kuris);
+				}
 			}
-		}	
+		}
 	}
 }
 void Salinti(int A[], int&n, int kuris)
